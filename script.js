@@ -609,7 +609,7 @@ var rares = [
   {
     name: '那杜斯長老',
     img: 'images/elder-nadox.png',
-    desc: '將會打「那杜斯長老」，會掉：戒子 (耐)。',
+    desc: '將會打「那杜斯長老」，會掉：戒子 (耐臨速)。',
     way: {
       x: 44.2,
       y: 49.1

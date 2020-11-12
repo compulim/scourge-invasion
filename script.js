@@ -2,14 +2,14 @@ const tuning = 60;
 
 const init = {
 	rare: 174062,
-	timer: "2020-11-12T03:20:00Z"
+	timer: "2020-11-11T23:20:00Z"
 }
 
 var rares = [
 	{
-		name: "Noth the Plaguebringer",
+		name: "『瘟疫使者』諾斯",
 		img: "images/noth-the-plaguebringer.png",
-		desc: "Noth the Plaguebringer is the first boss of the Plague Quarter of Naxxramas.",
+		desc: "將會打「『瘟疫使者』諾斯」：31.6 70.5。掉：布胸、戒子。",
 		way: {
 			x: 31.6,
 			y: 70.5
@@ -35,9 +35,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Patchwerk",
+		name: "縫補者",
 		img: "images/patchwerk.png",
-		desc: "Patchwerk is the first boss of the Construct Quarter of Naxxramas.",
+		desc: "將會打「縫補者」：34.4 68.5。掉：皮腰、鎖肩、雙手斧。",
 		way: {
 			x: 34.4,
 			y: 68.5
@@ -67,9 +67,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Blood Queen Lana'thel",
+		name: "血腥女王菈娜薩爾",
 		img: "images/blood-queen-lanathel.png",
-		desc: "Blood-Queen Lana'thel is the last boss in the Crimson Hall of Icecrown Citadel.",
+		desc: "將會打「血腥女王菈娜薩爾」：49.7 32.7。掉：鎖胸、鎧手、長柄武器。",
 		way: {
 			x: 49.7,
 			y: 32.7
@@ -99,9 +99,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Professor Putricide",
+		name: "普崔希德教授",
 		img: "images/professor-putricide.png",
-		desc: "Professor Putricide is the Scourge genius behind the development of all forms of blight, plague, ooze, scourge, and death delivery.",
+		desc: "將會打「普崔希德教授」：57.1 30.3。掉：皮頭、鎧胸、飾品 (致命一擊)。",
 		way: {
 			x: 57.1,
 			y: 30.3
@@ -131,9 +131,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Lady Deathwhisper",
+		name: "亡語女士",
 		img: "images/lady-deathwhisper.png",
-		desc: "Lady Deathwhisper is a female lich and leader of the Cult of the Damned.",
+		desc: "將會打「亡語女士」：51.1 78.5。掉：布肩、皮胸、鎖手。",
 		way: {
 			x: 51.1,
 			y: 78.5
@@ -163,9 +163,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Skadi the Ruthless",
+		name: "無情的斯卡迪",
 		img: "images/skadi-the-ruthless.png",
-		desc: "Skadi the Ruthless is the third boss in Utgarde Pinnacle. He can drop the mount <a href=\"https://www.wowhead.com/item=44151/\" target=\"_blank\" data-wowhead=\"item=44151\">Reins of the Blue Proto-Drake</a>.",
+		desc: "將會打「無情的斯卡迪」：57.8 56.1。掉：藍色元龍、鎧腰、皮胸、鎖足。",
 		way: {
 			x: 57.8,
 			y: 56.1
@@ -199,9 +199,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Ingvar the Plunderer",
+		name: "『盜掠者』因格瓦",
 		img: "images/ingvar-the-plunderer.png",
-		desc: "Ingvar the Plunderer, commander of the dragon forces, is the third and last boss in Utgarde Keep.",
+		desc: "將會打「『盜掠者』因格瓦」：52.4 52.6。掉：皮腰、戒子、雙手斧。",
 		way: {
 			x: 52.4,
 			y: 52.6
@@ -231,9 +231,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Prince Keleseth",
+		name: "凱雷希斯親王",
 		img: "images/prince-keleseth.png",
-		desc: "Prince Keleseth, a darkfallen, is the first boss of Utgarde Keep.",
+		desc: "將會打「凱雷希斯親王」：54.0 44.7。掉：披風、拳擊武器、鎖手。",
 		way: {
 			x: 54.0,
 			y: 44.7
@@ -263,9 +263,9 @@ var rares = [
 		]
 	},
 	{
-		name: "The Black Knight",
+		name: "黑騎士",
 		img: "images/the-black-knight.png",
-		desc: "The Black Knight is the third and last boss of the Trial of the Champion.",
+		desc: "將會打「黑騎士」：64.8 22.1。掉：匕首、皮肩、鎧頭。",
 		way: {
 			x: 64.8,
 			y: 22.1
@@ -295,9 +295,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Bronjahm",
+		name: "布朗吉姆",
 		img: "images/bronjahm.png",
-		desc: "Bronhahm, the Godfather of Souls, is the first boss in The Forge of Souls. He can drop <a href=\"https://www.wowhead.com/item=183634/\" target=\"_blank\" data-wowhead=\"item=183634\">Papa's Mint Condition bag</a>.",
+		desc: "將會打「布朗吉姆」：70.7 38.4。掉：34 格包、布手、鎖頭、鎧手。",
 		way: {
 			x: 70.7,
 			y: 38.4
@@ -331,9 +331,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Scourgelord Tyrannus",
+		name: "天讉領主提朗紐斯",
 		img: "images/scourgelord-tyrannus.png",
-		desc: "Scourgelord Tyrannus is a human Death Knight riding the frost wyrm Rimefang.",
+		desc: "將會打「天讉領主提朗紐斯」：47.2 66.1。掉：希足、皮足、盾。",
 		way: {
 			x: 47.2,
 			y: 66.1
@@ -363,9 +363,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Forgemaster Garfrost",
+		name: "鍛造大師加弗羅斯",
 		img: "images/forgemaster-garfrost.png",
-		desc: "Forgemaster Garfrost is a flesh giant covered with ice, whose duty is to forge saronite weapons and armor for the Scourge.",
+		desc: "將會打「鍛造大師加弗羅斯」：58.6 72.5。掉：鎧足、戒子、雙手錘。",
 		way: {
 			x: 58.6,
 			y: 72.5
@@ -395,9 +395,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Marwyn",
+		name: "麥爾溫",
 		img: "images/marwyn.png",
-		desc: "Marwyn, Arthas Menethil's second captain, is the second boss in the Halls of Reflection.",
+		desc: "將會打「麥爾溫」：58.2 83.4。掉：布肩、布頭、鎖胸。",
 		way: {
 			x: 58.2,
 			y: 83.4
@@ -427,9 +427,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Falric",
+		name: "法勒瑞克",
 		img: "images/falric.png",
-		desc: "Falric, a captain for Arthas in both life and death, is the first boss in the Halls of Reflection.",
+		desc: "將會打「法勒瑞克」：50.2 87.9。掉：布腕、鎧肩、鎧足。",
 		way: {
 			x: 50.2,
 			y: 87.9
@@ -459,9 +459,9 @@ var rares = [
 		]
 	},
 	{
-		name: "The Prophet Tharon'ja",
+		name: "預言者薩隆杰",
 		img: "images/the-prophet-tharonja.png",
-		desc: "Prophet Tharon'ja, a skeletal wind serpent, is the last boss of Drak'Tharon Keep.",
+		desc: "將會打「預言者薩隆杰」：80.1 61.2。掉：皮足、戒子、盾。",
 		way: {
 			x: 80.1,
 			y: 61.2
@@ -491,9 +491,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Novos the Summoner",
+		name: "『召喚者』諾沃司",
 		img: "images/novos-the-summoner.png",
-		desc: "Novos the Summoner, a lich, is the second boss of Drak'Tharon Keep.",
+		desc: "將會打「『召喚者』諾沃司」：77.8 66.1。掉：鎖腕、鎧胸、單手錘。",
 		way: {
 			x: 77.8,
 			y: 66.1
@@ -523,9 +523,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Trollgore",
+		name: "血角食人妖",
 		img: "images/trollgore.png",
-		desc: "Trollgore, a dire troll, is the first boss of Drak'Tharon Keep.",
+		desc: "將會打「血角食人妖」:58.3、39.4 掉：布頭、雙手劍。",
 		way: {
 			x: 58.3,
 			y: 39.4
@@ -551,9 +551,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Krik'thir the Gatewatcher",
+		name: "『守門者』齊力克西爾",
 		img: "images/krikthir-the-gatewatcher.png",
-		desc: "Krik'thir the Gatewatcher is the first boss of Azjol-Nerub.",
+		desc: "將會打「『守門者』齊力克西爾」:67.5 58.0。掉：匕首。",
 		way: {
 			x: 67.5,
 			y: 58.0
@@ -575,9 +575,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Prince Taldaram",
+		name: "泰爾達朗親王",
 		img: "images/prince-taldaram.png",
-		desc: "Prince Taldaram, a vampiric darkfallen, is the second boss of Ahn'kahet: The Old Kingdom.",
+		desc: "將會打「泰爾達朗親王」：29.6 62.2。掉：披風、拳擊武器、皮足、鎖腰、鎖手、頸鍊。",
 		way: {
 			x: 29.6,
 			y: 62.2
@@ -607,9 +607,9 @@ var rares = [
 		]
 	},
 	{
-		name: "Elder Nadox",
+		name: "那杜斯長老",
 		img: "images/elder-nadox.png",
-		desc: "Elder Nadox is the first boss of Ahn'kahet: The Old Kingdom.",
+		desc: "將會打「那杜斯長老」：44.2 49.1。掉：戒子。",
 		way: {
 			x: 44.2,
 			y: 49.1
@@ -775,10 +775,9 @@ $(function() {
 
 		hideTooltip();
 	});
-	
+
 	clipboard.on('error', function(e) {
 		setTooltip(e.trigger, 'Failed!');
 		hideTooltip();
 	});
 })
-

@@ -652,7 +652,7 @@ var html = `
 						<button type="button" class="map waypoint btn btn-sm btn-outline-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));">地圖</button>
 					</div>
 					<div class="btn-group">
-						<button type="button" class="announce waypoint btn btn-sm btn-outline-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));SendChatMessage('{{name}} at '..b.GetUserWaypointHyperlink(),'CHANNEL',_,1);">公告</button>
+						<button type="button" class="announce waypoint btn btn-sm btn-outline-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118,{{way.x}}/100,{{way.y}}/100));SendChatMessage('於 {{nextSpawn}} {{desc}}'..b.GetUserWaypointHyperlink(),'CHANNEL',_,4);">公告</button>
 					</div>
 					<div class="btn-group">
 						<button type="button" class="tomtom waypoint btn btn-sm btn-outline-primary" data-clipboard-text="/way {{way.x}} {{way.y}}">TomTom</button>

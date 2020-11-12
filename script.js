@@ -633,36 +633,36 @@ var rares = [
 ];
 
 var html = `
-	<div class="col-md-4">
-		<div class="card mb-4 box-shadow">
-			<img class="card-img-top" src="{{img}}" alt="{{name}}">
-			<div class="card-body">
-				<h3><a href="https://www.wowhead.com/npc={{id}}/" target="_blank" data-wowhead="npc={{id}}">{{name}}</a></h3>
-				<p class="card-text">{{{desc}}}</p>
-				<p class="card-text">掉落：</p>
-				<ul>
-				{{#each loot}}
-					<li>
-						<a href="https://www.wowhead.com/item={{id}}/" target="_blank" data-wowhead="item={{id}}">{{name}}</a>
-					</li>
-				{{/each}}
-				</ul>
-				<div class="d-flex justify-content-between align-items-center">
-					<div class="btn-group">
-						<button type="button" class="map waypoint btn btn-sm btn-outline-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));">地圖</button>
-					</div>
-					<div class="btn-group">
-						<button type="button" class="announce waypoint btn btn-sm btn-outline-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118,{{way.x}}/100,{{way.y}}/100));SendChatMessage('於 {{nextSpawn}} {{desc}}'..b.GetUserWaypointHyperlink(),'CHANNEL',_,4);">公告</button>
-					</div>
-					<div class="btn-group">
-						<button type="button" class="tomtom waypoint btn btn-sm btn-outline-primary" data-clipboard-text="/way {{way.x}} {{way.y}}">TomTom</button>
-					</div>
+  <div class="col-md-4">
+    <div class="card mb-4 box-shadow">
+      <img class="card-img-top" src="{{img}}" alt="{{name}}">
+      <div class="card-body">
+        <h3><a href="https://www.wowhead.com/npc={{id}}/" target="_blank" data-wowhead="npc={{id}}">{{name}}</a></h3>
+        <p class="card-text">{{{desc}}}</p>
+        <p class="card-text">掉落：</p>
+        <ul>
+        {{#each loot}}
+          <li>
+            <a href="https://www.wowhead.com/item={{id}}/" target="_blank" data-wowhead="item={{id}}">{{name}}</a>
+          </li>
+        {{/each}}
+        </ul>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="map waypoint btn btn-sm btn-outline-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118, {{way.x}}/100, {{way.y}}/100));">地圖</button>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="announce waypoint btn btn-sm btn-outline-primary" data-clipboard-text="/run b=C_Map;b.SetUserWaypoint(UiMapPoint.CreateFromCoordinates(118,{{way.x}}/100,{{way.y}}/100));SendChatMessage('於 {{nextSpawn}} {{desc}}'..b.GetUserWaypointHyperlink(),'CHANNEL',_,4);">公告</button>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="tomtom waypoint btn btn-sm btn-outline-primary" data-clipboard-text="/way {{way.x}} {{way.y}}">TomTom</button>
+          </div>
 
-					<small class="text-muted">{{nextSpawnDuration}} @ {{nextSpawn}}</small>
-				</div>
-			</div>
-		</div>
-	</div>
+          <small class="text-muted">{{nextSpawnDuration}} @ {{nextSpawn}}</small>
+        </div>
+      </div>
+    </div>
+  </div>
 `;
 
 function nextSpawn(rare) {
@@ -679,7 +679,8 @@ function nextSpawn(rare) {
 
   rare.nextSpawnMins = Math.round(duration.asMinutes());
   rare.nextSpawnDuration = duration.humanize();
-  rare.nextSpawn = spawnTimer.format('HH:mm');
+  rare.nextSpawn = moment.tz(spawnTimer, 'Asia/Hong_Kong').format('HH:mm');
+  // rare.nextSpawn = spawnTimer.format('HH:mm');
   //if (spawnTimer < current)
 }
 

@@ -9,7 +9,7 @@ var rares = [
   {
     name: '『瘟疫使者』諾斯',
     img: 'images/noth-the-plaguebringer.png',
-    desc: '將會打「『瘟疫使者』諾斯」，會掉：布胸、戒子。',
+    desc: '將會打「『瘟疫使者』諾斯」，會掉：布胸、戒子 (耐臨精)。',
     way: {
       x: 31.6,
       y: 70.5
@@ -201,7 +201,7 @@ var rares = [
   {
     name: '『盜掠者』因格瓦',
     img: 'images/ingvar-the-plunderer.png',
-    desc: '將會打「『盜掠者』因格瓦」，會掉：皮腰、戒子、雙手斧。',
+    desc: '將會打「『盜掠者』因格瓦」，會掉：皮腰、戒子 (耐速爆)、雙手斧。',
     way: {
       x: 52.4,
       y: 52.6
@@ -365,7 +365,7 @@ var rares = [
   {
     name: '鍛造大師加弗羅斯',
     img: 'images/forgemaster-garfrost.png',
-    desc: '將會打「鍛造大師加弗羅斯」，會掉：鎧足、戒子、雙手錘。',
+    desc: '將會打「鍛造大師加弗羅斯」，會掉：鎧足、戒子 (耐爆精)、雙手錘。',
     way: {
       x: 58.6,
       y: 72.5
@@ -461,7 +461,7 @@ var rares = [
   {
     name: '預言者薩隆杰',
     img: 'images/the-prophet-tharonja.png',
-    desc: '將會打「預言者薩隆杰」，會掉：皮足、戒子、盾。',
+    desc: '將會打「預言者薩隆杰」，會掉：皮足、戒子 (耐臨爆)、盾。',
     way: {
       x: 80.1,
       y: 61.2
@@ -577,7 +577,7 @@ var rares = [
   {
     name: '泰爾達朗親王',
     img: 'images/prince-taldaram.png',
-    desc: '將會打「泰爾達朗親王」，會掉：皮足、鎖腰、頸鍊。',
+    desc: '將會打「泰爾達朗親王」，會掉：皮足、鎖腰、頸鍊 (耐爆速)。',
     way: {
       x: 29.6,
       y: 62.2
@@ -609,7 +609,7 @@ var rares = [
   {
     name: '那杜斯長老',
     img: 'images/elder-nadox.png',
-    desc: '將會打「那杜斯長老」，會掉：戒子。',
+    desc: '將會打「那杜斯長老」，會掉：戒子 (耐)。',
     way: {
       x: 44.2,
       y: 49.1

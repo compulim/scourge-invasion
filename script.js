@@ -758,7 +758,7 @@ $(function () {
     }
 
     if (trigger.hasClass('announce')) {
-      setTooltip(e.trigger, '到遊戲中 CTRL-V 就可以於第 4 個頻道中作出公告 (先設定 /4 是「組隊頻道)。');
+      setTooltip(e.trigger, '到遊戲中 CTRL-V 就可以於第 4 個頻道中作出公告 (先設定 /4 是「組隊頻道」)。');
     }
 
     if (trigger.hasClass('tomtom')) {

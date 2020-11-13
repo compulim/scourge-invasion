@@ -333,7 +333,7 @@ var rares = [
   {
     name: '天讉領主提朗紐斯',
     img: 'images/scourgelord-tyrannus.png',
-    desc: '將會打「天讉領主提朗紐斯」，會掉：希足、皮足、盾。',
+    desc: '將會打「天讉領主提朗紐斯」，會掉：布足、皮足、盾。',
     way: {
       x: 47.2,
       y: 66.1

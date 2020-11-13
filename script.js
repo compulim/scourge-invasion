@@ -754,15 +754,15 @@ $(function () {
     const trigger = $(e.trigger);
 
     if (trigger.hasClass('map')) {
-      setTooltip(e.trigger, 'Copied script to create a map waypoint on your map pointing to the rare.');
+      setTooltip(e.trigger, '到遊戲中 CTRL-V 就可以標示出地點。');
     }
 
     if (trigger.hasClass('announce')) {
-      setTooltip(e.trigger, 'Copied script to create a map waypoint and announces it linked into the zone channel.');
+      setTooltip(e.trigger, '到遊戲中 CTRL-V 就可以於第 4 個頻道中作出公告 (先設定 /4 是「組隊頻道)。');
     }
 
     if (trigger.hasClass('tomtom')) {
-      setTooltip(e.trigger, 'Copied script to creates a TomTom waypoint (requires TomTom addon).');
+      setTooltip(e.trigger, '到遊戲中 CTRL-V 就可以加入 TomTom 成為航點。');
     }
 
     hideTooltip();

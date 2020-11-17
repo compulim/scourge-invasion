@@ -700,6 +700,23 @@ function hideTooltip() {
   }, 1500);
 }
 
+function refreshBronjahmn() {
+  const list = [];
+  const spawnTimer = new moment('2020-11-17T02:30:00.000Z');
+  const currentDate = new moment();
+
+  while (spawnTimer < currentDate) {
+    spawnTimer.add(200, 'minutes');
+  }
+
+  for (let index = 0; index < 12; index++) {
+    list.push(moment.tz(spawnTimer, 'Asia/Hong_Kong').format('HH:mm (dd)'));
+    spawnTimer.add(200, 'minutes');
+  }
+
+  $('.bronjahm').text(list.join('、'));
+}
+
 function refreshCards() {
   $('#cards').empty();
 
@@ -726,10 +743,14 @@ function refreshCards() {
     ga('send', 'event', 'cards', 'refresh');
   }
 
+  refreshBronjahmn();
+
   return false;
 }
 
 $(function () {
+  moment.locale('zh-hk');
+
   // Initialize timers for each rare from init block
   const initIndex = rares.findIndex(rare => rare.id == init.rare);
 

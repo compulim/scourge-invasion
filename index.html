@@ -49,9 +49,13 @@
 
     <main role="main">
       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <p class="lead">這個網頁顯示寒冰皇冠銀英，於天讉入侵時的次序。</p>
         <p class="lead">
-          這個網頁顯示寒冰皇冠銀英，於天讉入侵時的次序。<br />
-          將會跟據稀有敵人的出現時間而順序。
+          總共有 20 個稀有精英，會依序現身，每 10 分鐘刷新一個，一個循環需要 3:20 小時。<br />
+          例如，布朗吉姆於 00:00 出現，下一次將會於 03:20 出現。
+        </p>
+        <p class="lead">
+          <small>（稀有精英已更新為每 10 分鐘刷新一次，及自動計算包包王時間表。）</small>
         </p>
         <p class="lead">
           <button type="button" class="btn btn-primary" onclick="refreshCards();">
@@ -114,28 +118,5 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
     <script src="script.js"></script>
-    <script>
-      !(function () {
-        'use strict';
-
-        moment.locale('zh-hk');
-
-        const list = [];
-        const frequencyInMilliseconds = 200 * 60 * 1000;
-        const spawnTimer = new moment('2020-11-17T02:30:00.000Z');
-        const currentDate = new moment();
-
-        while (spawnTimer < currentDate) {
-          spawnTimer.add(200, 'minutes');
-        }
-
-        for (let index = 0; index < 12; index++) {
-          list.push(moment.tz(spawnTimer, 'Asia/Hong_Kong').format('HH:mm (dd)'));
-          spawnTimer.add(200, 'minutes');
-        }
-
-        document.querySelector('.bronjahm').innerText = list.join('、');
-      })();
-    </script>
   </body>
 </html>

@@ -59,10 +59,7 @@
           </button>
         </p>
         <p>
-          <small>
-            包包王 (布朗吉姆)：10:30 (二)、13:50 (二)、17:10 (二)、20:30 (二)、23:50 (二)、03:10 (三)、06:30 (三)、09:50
-            (三)、13:10 (三)、16:30 (三)、19:50 (三)、23:10 (三)。</small
-          >
+          <small> 包包王 (布朗吉姆)：<span class="bronjahm"></span>。</small>
         </p>
         <p>
           <small>若果沒擊殺稀有敵人，將會一併出現，這網頁只顯示最新一次刷新時間。</small>
@@ -117,5 +114,28 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
     <script src="script.js"></script>
+    <script>
+      !(function () {
+        'use strict';
+
+        moment.locale('zh-hk');
+
+        const list = [];
+        const frequencyInMilliseconds = 200 * 60 * 1000;
+        const spawnTimer = new moment('2020-11-17T02:30:00.000Z');
+        const currentDate = new moment();
+
+        while (spawnTimer < currentDate) {
+          spawnTimer.add(200, 'minutes');
+        }
+
+        for (let index = 0; index < 12; index++) {
+          list.push(moment.tz(spawnTimer, 'Asia/Hong_Kong').format('HH:mm (dd)'));
+          spawnTimer.add(200, 'minutes');
+        }
+
+        document.querySelector('.bronjahm').innerText = list.join('、');
+      })();
+    </script>
   </body>
 </html>
